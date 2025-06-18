@@ -23,4 +23,4 @@ app.use(require('./Controllers/auth'));
 app.listen(PORT, ()=>{
    console.log(`Server runing on post http://localhost:${PORT}`)
 });
- 
+
