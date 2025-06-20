@@ -1,5 +1,7 @@
 const jwt = require('jsonwebtoken');
+
 const { SECRETKEY } = require('../keys');
+
 const User = require('../models/auth');
 
 module.exports = (req, res, next) => {
@@ -34,8 +36,8 @@ module.exports = (req, res, next) => {
 
         }
         // console.log(savedUser);
-        req.user = token
-        next()
-      })
-  })
+        req.user = savedUser
+        next();
+      });
+  });
 }

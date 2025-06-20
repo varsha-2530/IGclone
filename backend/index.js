@@ -19,6 +19,7 @@ mongoose.connect(MONGOURI)
 
 
 app.use(require('./Controllers/auth'));
+app.use(require('./Controllers/post'));
 
 app.listen(PORT, ()=>{
    console.log(`Server runing on post http://localhost:${PORT}`)

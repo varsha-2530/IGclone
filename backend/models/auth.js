@@ -25,12 +25,12 @@ const userSchema = new mongoose.Schema({
 
     followers: [{
         type: ObjectId,
-        ref: "user"
+        ref: "User"
     }],
 
     following: [{
         type: ObjectId,
-        ref: "user"
+        ref: "User"
     }]
 
 
